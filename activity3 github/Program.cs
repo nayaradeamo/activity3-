@@ -17,7 +17,7 @@
                     capitals();
                     break;
                 case ConsoleKey.D2:
-                 bigC();
+                     bigC();
                     break;
                 case ConsoleKey.D3:
                   //  DoTry2ReadValidTimeStamp();
@@ -521,6 +521,403 @@
     public static string bern()
     {
         return " BERN ";
+    }
+
+    public static void bigC()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            preguntesTotes2();
+            tecla = Console.ReadKey();
+            Console.Clear();
+
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    respostaLondDub();
+                    break;
+                case ConsoleKey.D2:
+                  respostaAnkBud();
+                    break;
+                case ConsoleKey.D3:
+                 respostaSofOls();
+                    break;
+
+                case ConsoleKey.D4:
+                respostaCopSto();
+                    break;
+                case ConsoleKey.D5:
+                 respostaGirWar();
+                    break;
+
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void preguntesTotes2()
+    {
+        Console.WriteLine("1-WHAT'S THE BIGGEST CITY, LONDON OR DUBLIN?"); 
+        Console.WriteLine("2-WHAT'S THE BIGGEST CITY, ANKARA OR BUDAPEST?");
+        Console.WriteLine("3-WHAT'S THE BIGGEST CITY, SOFIA OR OSLO?");
+        Console.WriteLine("4-WHAT'S THE BIGGEST CITY, COPENHAGEN OR STOCKHOLM?");
+        Console.WriteLine("5-WHAT'S THE BIGGEST CITY, GIRONA OR WARSAW?");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void respostaLondDub()
+    {
+
+
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respostes11();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    dub2();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    lond2();
+                    break;
+                case ConsoleKey.D3:
+                    idk2();
+                    break;
+                case ConsoleKey.D4:
+                    both2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+      
+    }
+
+    public static void respostes11()
+    {
+        Console.WriteLine("1-DUBLIN");
+        Console.WriteLine("2-LONDON");
+        Console.WriteLine("3-IDK DARLING!");
+        Console.WriteLine("4-BOTH SIMILAR ");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void dub2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON!", dublin());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string dublin()
+    {
+        return " DUBLIN ";
+    }
+
+    public static void lond2()
+    {
+        Console.WriteLine("{0}IS CORRECT!", london());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string london()
+    {
+        return " LONDON ";
+    }
+
+    public static void idk2()
+    {
+        Console.WriteLine("DON'T WORRY DARLING! TRY IT LATER!");
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static void both2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON!", both());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string both()
+    {
+        return " BOTH ";
+    }
+
+    public static void respostaAnkBud()
+    {
+
+
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respostes11();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    ank2();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    bud2();
+                    break;
+                case ConsoleKey.D3:
+                    idk2();
+                    break;
+                case ConsoleKey.D4:
+                    both2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+
+    }
+
+    public static void respostes22()
+    {
+        Console.WriteLine("1-ANKARA");
+        Console.WriteLine("2-BUDAPEST");
+        Console.WriteLine("3-IDK DARLING!");
+        Console.WriteLine("4-BOTH SIMILAR ");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void ank2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ANKARA!",budapest());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string budapest()
+    {
+        return " BUDAPEST ";
+    }
+
+    public static void bud2()
+    {
+        Console.WriteLine("{0}IS CORRECT!", ankara());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string ankara()
+    {
+        return " ANKARA ";
+    }
+
+    public static void respostaSofOls()
+    {
+        
+
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respostes23();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    sof2();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    osl2();
+                    break;
+                case ConsoleKey.D3:
+                    idk2();
+                    break;
+                case ConsoleKey.D4:
+                    both2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+
+    }
+    public static void respostes23()
+    {
+        Console.WriteLine("1- OSLO ");
+        Console.WriteLine("2-SOFIA");
+        Console.WriteLine("3-IDK DARLING!");
+        Console.WriteLine("4-BOTH SIMILAR ");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void osl2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS SOFIA!", oslo());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string oslo()
+    {
+        return " OSLO ";
+    }
+
+    public static void sof2()
+    {
+        Console.WriteLine("{0}IS CORRECT!", sofia());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string sofia()
+    {
+        return " SOFIA ";
+    }
+
+
+   
+
+    public static void respostaCopSto()
+    {
+
+
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respostes24();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    stoc2();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    cop2();
+                    break;
+                case ConsoleKey.D3:
+                    idk2();
+                    break;
+                case ConsoleKey.D4:
+                    both2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+
+    }
+    public static void respostes24()
+    {
+        Console.WriteLine("1-STOCKHOLM");
+        Console.WriteLine("2-COPENHAGEN ");
+        Console.WriteLine("3-IDK DARLING!");
+        Console.WriteLine("4-BOTH SIMILAR ");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void cop2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS SOFIA!", copenhagen());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string copenhagen()
+    {
+        return " COPENHAGEN ";
+    }
+
+    public static void stoc2()
+    {
+        Console.WriteLine("{0}IS CORRECT!", estocolmo());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string estocolmo()
+    {
+        return " STOCKHOLM";
+    }
+
+    // aqui
+
+    //WARSAW
+    public static void respostaGirWar()
+    {
+
+
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respostes25();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    war2();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    gir2();
+                    break;
+                case ConsoleKey.D3:
+                    idk2();
+                    break;
+                case ConsoleKey.D4:
+                    both2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+
+    }
+
+    public static void respostes25()
+    {
+        Console.WriteLine("1-WARSAW");
+        Console.WriteLine("2-GIRONA ");
+        Console.WriteLine("3-IDK DARLING!");
+        Console.WriteLine("4-BOTH SIMILAR ");
+        Console.WriteLine("0-EXIT");
+    }
+
+    public static void gir2()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS WARSAW!", girona());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string girona()
+    {
+        return " GIRONA ";
+    }
+
+    public static void war2()
+    {
+        Console.WriteLine("{0}IS CORRECT!", varsovia());
+
+        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+    }
+
+    public static string varsovia()
+    {
+        return " WARSAW";
     }
 
 
