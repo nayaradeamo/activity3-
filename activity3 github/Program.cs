@@ -23,6 +23,9 @@ internal class Program
                 case ConsoleKey.D3:
                   singer();
                     break;
+                case ConsoleKey.D4:
+                    Football();
+                    break;
 
                 default:
                     MsgNextScreen("ERROR, Prem una tecla per tornar al menu..");
@@ -1310,3 +1313,79 @@ internal class Program
     }
 }
 
+//Mamadou
+public static void Football()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        preguntesFootball();
+        tecla = Console.ReadKey();
+        Console.Clear();
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                respostamoreworld();
+                break;
+            case ConsoleKey.D2:
+                respostamorechampionsleague();
+                break;
+            case ConsoleKey.D3:
+                respostatopscorer();
+                break;
+            case ConsoleKey.D4:
+                respostaLastworldcupwinner();
+                break;
+            case ConsoleKey.D5:
+                respostaLastwinneroftheFinalissima();
+                break;
+
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void preguntesFootball()
+{
+    Console.WriteLine("1-Which national team has more world cups?");
+    Console.WriteLine("2-Which team has more champions league?");
+    Console.WriteLine("3-Soccer top scorer of all time?");
+    Console.WriteLine("4-Last world cup winne?");
+    Console.WriteLine("5-Last winner of the Finalissima?");
+}
+public static void MsgNextScreen(string msg)
+{
+    Console.WriteLine(msg);
+    Console.ReadKey();
+
+}
+public static void respostamoreworld()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare1();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Aleman();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Esapan();
+                break;
+            case ConsoleKey.D3:
+                Argentin();
+                break;
+            case ConsoleKey.D4:
+                Brazil();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+}
