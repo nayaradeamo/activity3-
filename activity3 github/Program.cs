@@ -1,4 +1,5 @@
-﻿internal class Program
+﻿
+internal class Program
 {
     public static void Main(string[] args)
     {
@@ -20,7 +21,7 @@
                      bigC();
                     break;
                 case ConsoleKey.D3:
-                  //  DoTry2ReadValidTimeStamp();
+                  singer();
                     break;
 
                 default:
@@ -35,9 +36,9 @@
     {
         Console.WriteLine("1- CAPITALS");
         Console.WriteLine("2- BIGGEST COUNTRY");
-        Console.WriteLine("3- ");
+        Console.WriteLine("3- SINGER");
     }
-
+    //nayara
     public static void capitals()
     {
         ConsoleKeyInfo tecla;
@@ -851,9 +852,7 @@
         return " STOCKHOLM";
     }
 
-    // aqui
-
-    //WARSAW
+  
     public static void respostaGirWar()
     {
 
@@ -920,5 +919,392 @@
         return " WARSAW";
     }
 
+    //aqui
 
+    public static void singer()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            preguntesultimes1();
+            tecla = Console.ReadKey();
+            Console.Clear();
+
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    marineroLuces();
+                    break;
+                case ConsoleKey.D2:
+                    enmisalsa();
+                    break;
+                case ConsoleKey.D3:
+                    elSenyor();
+                    break;
+
+                case ConsoleKey.D4:
+                   xina();
+                    break;
+                case ConsoleKey.D5:
+                 purpurina();
+                    break;
+
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+
+
+    }
+
+    public static void preguntesultimes1()
+    {
+        Console.WriteLine("1-WHO'S THE SINGER OF MARINERO DE LUCES SONG?");
+        Console.WriteLine("2-WHO'S THE SINGER OF EN MI SALSA'S SONG?");
+        Console.WriteLine("3-WHO'S THE SINGER OF EL SENYOR DE LA NOCHE'S SONG?");
+        Console.WriteLine("4-WHO'S THE SINGER OF CHINA'S SONG?");
+        Console.WriteLine("5-WHAT'S THE CAPITAL OF GERMANY?");
+    }
+
+    public static void marineroLuces()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respuestasultima1();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    isabelP();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    manoloE();
+                    break;
+                case ConsoleKey.D3:
+                    rocioJ();
+                    break;
+                case ConsoleKey.D4:
+                    patxotM();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void respuestasultima1()
+    {
+
+        Console.WriteLine("1- ISABEL PANTOJA");
+        Console.WriteLine("2- MANOLO ESCOBAR");
+        Console.WriteLine("3- ROCIO JURADO");
+        Console.WriteLine("4- PATXOT");
+        Console.WriteLine("0- EXIT");
+    }
+
+    public static void isabelP()
+    { 
+            Console.WriteLine("{0} IS THE CORRECT ANSWER!", isabel());
+       
+    }
+
+    public static string isabel()
+    {
+        return " ISABEL PANTOJA ";
+    }
+
+    public static void manoloE()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", manolo());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string manolo()
+    {
+        return " MANOLO ESCOBAR ";
+    }
+
+    public static void rocioJ()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", rocio());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string rocio()
+    {
+        return " ROCIO JURADO ";
+    }
+    public static void patxotM()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", patxot());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string patxot()
+    {
+        return " PATXOT ";
+    }
+    public static void enmisalsa()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respuestasultima2();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                   letiS();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    mariaP();
+                    break;
+                case ConsoleKey.D3:
+                  patxotM2();
+                    break;
+                case ConsoleKey.D4:
+                  mileyC();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void respuestasultima2()
+    {
+
+        Console.WriteLine("1- LETICIA SABATER");
+        Console.WriteLine("2- MARIA PATINYO");
+        Console.WriteLine("3- PATXOT");
+        Console.WriteLine("4- MILEY CYRUS");
+        Console.WriteLine("0- EXIT");
+    }
+
+    public static void letiS()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", leti());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string leti()
+    {
+        return " LETICIA SABATER ";
+    }
+
+    public static void mariaP()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", maria());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string maria()
+    {
+        return " MARIA PATINYO ";
+    }
+
+    public static void patxotM2()
+    {
+        Console.WriteLine("{0} IS THE CORRECT ANSWER!", patxot());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static void mileyC()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", miley());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string miley()
+    {
+        return " MILEY CYRUS ";
+    }
+
+    public static void elSenyor()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respuestasultima3();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    letiS();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    omarM();
+                    break;
+                case ConsoleKey.D3:
+                    mCaballer();
+                    break;
+                case ConsoleKey.D4:
+                    dOmar();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void respuestasultima3()
+    {
+
+        Console.WriteLine("1- LETICIA SABATER");
+        Console.WriteLine("2- OMAR MONTES");
+        Console.WriteLine("3- MONTSERRAT CABALLER");
+        Console.WriteLine("4- DON OMAR");
+        Console.WriteLine("0- EXIT");
+    }
+
+    public static void omarM()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", omar());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string omar()
+    {
+        return " OMAR MONTES ";
+    }
+
+    public static void mCaballer()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", caballer());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string caballer()
+    {
+        return " MONTSERRAT CABALLER ";
+    }
+
+    public static void dOmar()
+    {
+        Console.WriteLine("{0} IS THE CORRECT ANSWER!", donO());
+       
+    }
+
+    public static string donO()
+    {
+        return " DON OMAR ";
+    }
+
+    public static void xina()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respuestasultima4();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                   omarM();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                  patxotM();
+                    break;
+                case ConsoleKey.D3:
+                  anuelX2A();
+                    break;
+                case ConsoleKey.D4:
+                    d0mar2();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void respuestasultima4()
+    {
+
+        Console.WriteLine("1- OMAR MONTES");
+        Console.WriteLine("2- PATXOT");
+        Console.WriteLine("3- ANUEL AA");
+        Console.WriteLine("4- DON OMAR");
+        Console.WriteLine("0- EXIT");
+    }
+
+    public static void anuelX2A()
+    {
+        Console.WriteLine("{0} IS THE CORRECT ANSWER!", anuel());
+
+    }
+
+    public static string anuel()
+    {
+        return " ANUEL AA ";
+    }
+
+    public static void dOmar2()
+    {
+        Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", d0mar2());
+        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+    }
+
+    public static string d0mar2()
+    {
+        return " DON OMAR ";
+    }
+
+    public static void purpurina()
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            respuestasultima5();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    albertoG();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                   patxotM();
+                    break;
+                case ConsoleKey.D3:
+                   letiS();
+                    break;
+                case ConsoleKey.D4:
+                   mileyC();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+
+    public static void respuestasultima5()
+    {
+
+        Console.WriteLine("1- ALBERTO GAMBINO");
+        Console.WriteLine("2- PATXOT");
+        Console.WriteLine("3- LETICIA SABATER");
+        Console.WriteLine("4- MILEY CYRUS");
+        Console.WriteLine("0- EXIT");
+    }
+    public static void albertoG()
+    {
+        Console.WriteLine("{0} IS THE CORRECT ANSWER!", alberto());
+
+    }
+
+    public static string alberto()
+    {
+        return " ALBERTO GAMBINO ";
+    }
 }
+
