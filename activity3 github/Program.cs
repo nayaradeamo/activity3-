@@ -1341,8 +1341,6 @@ public static void Football()
             case ConsoleKey.D5:
                 respostaLastwinneroftheFinalissima();
                 break;
-
-
         }
     } while (tecla.Key != ConsoleKey.D0);
 }
@@ -1351,7 +1349,7 @@ public static void preguntesFootball()
     Console.WriteLine("1-Which national team has more world cups?");
     Console.WriteLine("2-Which team has more champions league?");
     Console.WriteLine("3-Soccer top scorer of all time?");
-    Console.WriteLine("4-Last world cup winne?");
+    Console.WriteLine("4-Last world cup winner?");
     Console.WriteLine("5-Last winner of the Finalissima?");
 }
 public static void MsgNextScreen(string msg)
@@ -1372,20 +1370,64 @@ public static void respostamoreworld()
         switch (tecla.Key)
         {
             case ConsoleKey.D1:
-                Aleman();
+                Aleman1();
                 Console.ReadLine();
                 break;
             case ConsoleKey.D2:
-                Esapan();
+                Esapan1();
                 break;
             case ConsoleKey.D3:
-                Argentin();
+                Argentin1();
                 break;
             case ConsoleKey.D4:
-                Brazil();
+                Brazil1();
                 break;
 
         }
     } while (tecla.Key != ConsoleKey.D0);
 }
+public static void answare1()
+{
+    Console.WriteLine("1- Alemania");
+    Console.WriteLine("2- Esapaña");
+    Console.WriteLine("3- Argentina");
+    Console.WriteLine("4- Brazil");
+    Console.WriteLine("0- EXIT");
+}
+public static void Brazil1()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Brazil());
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+
+public static string Brazil()
+{
+    return "BRAZIL";
+}
+public static void Aleman1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BRAZIL !", Alemania());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Alemania()
+{
+    return "ALEMANIA";
+}
+public static void Esapan1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BRAZIL !", España());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string España()
+{
+    return "ESAPAÑA";
 }
