@@ -1431,3 +1431,116 @@ public static string España()
 {
     return "ESAPAÑA";
 }
+public static void Argentin1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BRAZIL !", Argentina());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Argentina()
+{
+    return "ALEMANIA";
+}
+public static void preguntesFootball()
+{
+    Console.WriteLine("1-Which national team has more world cups?");
+    Console.WriteLine("2-Which team has more champions league?");
+    Console.WriteLine("3-Soccer top scorer of all time?");
+    Console.WriteLine("4-Last world cup winner?");
+    Console.WriteLine("5-Last winner of the Finalissima?");
+}
+public static void MsgNextScreen(string msg)
+{
+    Console.WriteLine(msg);
+    Console.ReadKey();
+
+}
+public static void respostamorechampionsleague()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare2();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Mad2();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Bar2();
+                break;
+            case ConsoleKey.D3:
+                Liv2();
+                break;
+            case ConsoleKey.D4:
+                Man2();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare2()
+{
+    Console.WriteLine("1- Real Madrid");
+    Console.WriteLine("2- Barcelona");
+    Console.WriteLine("3- Liverpool");
+    Console.WriteLine("4- Man United");
+    Console.WriteLine("0- EXIT");
+}
+public static void Mad2()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Madrid());
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+
+public static string Madrid()
+{
+    return "REAL MADRID";
+}
+public static void Bar2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS REAL MADRID !", Barcelona());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Barcelona()
+{
+    return "BARCELONA";
+}
+public static void Liv2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS REAL MADRID !", Liverpool());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Liverpool()
+{
+    return "LIVERPOOL";
+}
+public static void Man2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS REAL MADRID !", ManUnited());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string ManUnited()
+{
+    return "MAN UNITED";
+}
