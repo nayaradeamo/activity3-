@@ -1445,19 +1445,6 @@ public static string Argentina()
     return "ALEMANIA";
 }
 public static void preguntesFootball()
-{
-    Console.WriteLine("1-Which national team has more world cups?");
-    Console.WriteLine("2-Which team has more champions league?");
-    Console.WriteLine("3-Soccer top scorer of all time?");
-    Console.WriteLine("4-Last world cup winner?");
-    Console.WriteLine("5-Last winner of the Finalissima?");
-}
-public static void MsgNextScreen(string msg)
-{
-    Console.WriteLine(msg);
-    Console.ReadKey();
-
-}
 public static void respostamorechampionsleague()
 {
     ConsoleKeyInfo tecla;
@@ -1544,6 +1531,7 @@ public static string ManUnited()
 {
     return "MAN UNITED";
 }
+public static void preguntesFootball()
 public static void respostatopscorer()
 {
     ConsoleKeyInfo tecla;
@@ -1626,4 +1614,294 @@ public static void Pel3()
 public static string Pele()
 {
     return "PELÉ";
+}
+public static void respostaLastworldcupwinner()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare4();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Argen4();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Brazil4();
+                break;
+            case ConsoleKey.D3:
+                Fran4();
+                break;
+            case ConsoleKey.D4:
+                Espan4();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare4()
+{
+    Console.WriteLine("1- Argentina");
+    Console.WriteLine("2- Brazil");
+    Console.WriteLine("3- Francia");
+    Console.WriteLine("4- España");
+    Console.WriteLine("0- EXIT");
+}
+public static void Argen4()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Argentina2());
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+
+public static string Argentina2()
+{
+    return "ARGENTINA";
+}
+public static void Brazil4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGENTINA!", Brazil2());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Brazil2()
+{
+    return "BRAZIL";
+}
+public static void Fran4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGENTINA !", Francia());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Francia()
+{
+    return "ESAPAÑA";
+}
+public static void Espan4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGENTINA !", Esapan2());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Esapan2()
+{
+    return "ESPAÑA";
+}
+
+public static void respostaLastwinneroftheFinalissima()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare5();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Espan5();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Ital5();
+                break;
+            case ConsoleKey.D3:
+                Argen5();
+                break;
+            case ConsoleKey.D4:
+                Fran5();
+                break;
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare5()
+{
+    Console.WriteLine("1- España");
+    Console.WriteLine("2- Italia");
+    Console.WriteLine("3- Argetina");
+    Console.WriteLine("4- Francia");
+    Console.WriteLine("0- EXIT");
+}
+public static void Espan5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGENTINA!", Espan3());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+}
+public static string Espan3()
+{
+    return "ESAPAÑA";
+}
+public static void Ital5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGETINA!", Italia());
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+}
+
+public static string Italia()
+{
+    return "ITALIA";
+}
+public static void Argen5()
+{
+    Console.WriteLine("{0}IS THE CORRECT ANSWER!", Argentina3());
+
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+}
+
+public static string Argentina3()
+{
+    return "ARGENTINA";
+}
+public static void Fran5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ARGETINA!", Francia2());
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+}
+
+public static string Francia2()
+{
+    return "FRANCIA";
+}
+public static void NBA()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        preguntesNba();
+        tecla = Console.ReadKey();
+        Console.Clear();
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                respostamostchampionships();
+                break;
+            case ConsoleKey.D2:
+                respostaleadingscorer();
+                break;
+            case ConsoleKey.D3:
+                respostamostNBAchampionships();
+                break;
+            case ConsoleKey.D4:
+                respostamosttriples();
+                break;
+            case ConsoleKey.D5:
+                respostamosttriple-doubles();
+                break;
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void preguntesNba()
+{
+    Console.WriteLine("1-Franchise with the most championships?");
+    Console.WriteLine("2-All-time leading scorer in the NBA?");
+    Console.WriteLine("3-Player with the most NBA championships won?");
+    Console.WriteLine("4-Player with the most triples in the NBA?");
+    Console.WriteLine("5-Player with the most triple-doubles in the NBA?");
+}
+public static void MsgNextScreen(string msg)
+{
+    Console.WriteLine(msg);
+    Console.ReadKey();
+
+}
+public static void respostamostchampionships()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare1();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Lakers1();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Boston1();
+                break;
+            case ConsoleKey.D3:
+                Bulls1();
+                break;
+            case ConsoleKey.D4:
+                Warriors1();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare1()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Los Angeles Lakers");
+    Console.WriteLine("2- Boston Celtics");
+    Console.WriteLine("3- Chicago Bulls");
+    Console.WriteLine("4- Golden State Warriors");
+    Console.WriteLine("0- EXIT");
+}
+public static void Lakers1()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Lakers());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Lakers()
+{
+    return "LAKERS";
+}
+public static void Boston1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LAKERS !", Boston());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Boston()
+{
+    return " BOSTON ";
+}
+public static void Bulls1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LAKERS !", Bulls());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Bulls()
+{
+    return "BULLS";
+}
+public static void Warriors1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LAKERS !", Warriors());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Warriors()
+{
+    return "WARRIORS";
 }
