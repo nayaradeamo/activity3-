@@ -1544,3 +1544,86 @@ public static string ManUnited()
 {
     return "MAN UNITED";
 }
+public static void respostatopscorer()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare3();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Ronal3();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Josef3();
+                break;
+            case ConsoleKey.D3:
+                Mes3();
+                break;
+            case ConsoleKey.D4:
+                Pel3();
+                break;
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare3()
+{
+    Console.WriteLine("1- Cristiano Ronaldo");
+    Console.WriteLine("2- Josef Bican");
+    Console.WriteLine("3- Lionel Messi");
+    Console.WriteLine("4- Pelé");
+    Console.WriteLine("0- EXIT");
+}
+public static void Ronal3()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Ronaldo());
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+}
+public static string Ronaldo()
+{
+    return "RONALDO;"
+}
+public static void Josef3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS RONALDO !", Josef());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Josef()
+{
+    return "JOSEF BICAN";
+}
+public static void Mes3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS RONALDO !", Messi());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Messi()
+{
+    return "LIONEL MESSI";
+}
+public static void Pel3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS RONALDO !", Pele());
+
+
+
+    MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+
+}
+public static string Pele()
+{
+    return "PELÉ";
+}
