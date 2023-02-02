@@ -26,6 +26,12 @@ internal class Program
                 case ConsoleKey.D4:
                     Football();
                     break;
+                case ConsoleKey.D5:
+                    NBA();
+                    break;
+                case ConsoleKey.D6:
+                    F1();
+                    break;
 
                 default:
                     MsgNextScreen("ERROR, Prem una tecla per tornar al menu..");
@@ -41,7 +47,9 @@ internal class Program
         Console.WriteLine("2- BIGGEST COUNTRY");
         Console.WriteLine("3- SINGER");
         Console.WriteLine("4- FOOTBALL");
-        
+        Console.WriteLine("5- NBA");
+        Console.WriteLine("6- F1");
+
     }
     //nayara
     public static void capitals()
@@ -1805,7 +1813,7 @@ public static void NBA()
                 respostamosttriples();
                 break;
             case ConsoleKey.D5:
-                respostamosttriple-doubles();
+                respostamosttripledoubles();
                 break;
         }
     } while (tecla.Key != ConsoleKey.D0);
@@ -1904,4 +1912,593 @@ public static void Warriors1()
 public static string Warriors()
 {
     return "WARRIORS";
+}
+public static void respostaleadingscorer()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare2();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Kareem2();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                LeBron2();
+                break;
+            case ConsoleKey.D3:
+                Kobe2();
+                break;
+            case ConsoleKey.D4:
+                Jordan2();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare2()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Kareem Abdul-Jabbar");
+    Console.WriteLine("2- LeBron James");
+    Console.WriteLine("3- Kobe Bryant");
+    Console.WriteLine("4- Michael Jordan");
+    Console.WriteLine("0- EXIT");
+}
+public static void Kareem2()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Kareem());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Kareem()
+{
+    return "KAREEM";
+}
+public static void LeBron2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS KAREEM !", LeBron());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string LeBron()
+{
+    return "LEBRON";
+}
+public static void Kobe2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS KAREEM !", Kobe());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Kobe()
+{
+    return "KOBE";
+}
+public static void Jordan2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS KAREEM !", Jordan());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Jordan()
+{
+    return "JORDAN";
+}
+public static void respostamostNBAchampionships()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare3();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Russell3();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Jones3();
+                break;
+            case ConsoleKey.D3:
+                Jordan3();
+                break;
+            case ConsoleKey.D4:
+                Kobe3();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare3()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Bill Russell");
+    Console.WriteLine("2- Sam Jones");
+    Console.WriteLine("3- Michael Jordan");
+    Console.WriteLine("4- Kobe Bryant");
+    Console.WriteLine("0- EXIT");
+}
+public static void Russell3()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Russell());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Russell()
+{
+    return "RUSSELL";
+}
+public static void Jones3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BILL RUSSELL !", Jones());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Jones()
+{
+    return "JONES";
+}
+public static void Jordan3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BILL RUSSELL !", Joran());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Joran()
+{
+    return "JORDAN";
+}
+public static void Kobe3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BILL RUSSELL!", Kob());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Kob()
+{
+    return "KOBE";
+}
+public static void respostamosttriples()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare4();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Curry4();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Ray4();
+                break;
+            case ConsoleKey.D3:
+                James4();
+                break;
+            case ConsoleKey.D4:
+                Harden4();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare4()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Stephen Curry");
+    Console.WriteLine("2- Ray Allen");
+    Console.WriteLine("3- LeBron James");
+    Console.WriteLine("4- James Harden");
+    Console.WriteLine("0- EXIT");
+}
+public static void Curry4()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Curry());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Curry()
+{
+    return "CURRY";
+}
+public static void Ray4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS STEPHEN CURRY !", Allen());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Allen()
+{
+    return "ALLEN";
+}
+public static void James4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS STEPHEN CURRY!", jmes());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string jmes()
+{
+    return "LEBRON";
+}
+public static void Harden4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS STEPHEN CURRY!", Harden());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Harden()
+{
+    return "HARDEN";
+}
+public static void respostamosttripledoubles()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare5();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                West5();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Oscar5();
+                break;
+            case ConsoleKey.D3:
+                Magic5();
+                break;
+            case ConsoleKey.D4:
+                James5();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare5()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Russell Westbrook");
+    Console.WriteLine("2- Oscar Robertson");
+    Console.WriteLine("3- Magic Johnson");
+    Console.WriteLine("4- LeBron James");
+    Console.WriteLine("0- EXIT");
+}
+public static void West5()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Westbrook());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Westbrook()
+{
+    return "WESTBROOK";
+}
+public static void Oscar5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS WESTBROOK !", Oscar());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Oscar()
+{
+    return "OSCAR";
+}
+public static void Magic5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS WESTBROOK !", Magic());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Magic()
+{
+    return "MAGIC";
+}
+public static void James5()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS WESTBROOK !", Bron());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Bron()
+{
+    return "LEBRON";
+}
+public static void F1()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        preguntesF1();
+        tecla = Console.ReadKey();
+        Console.Clear();
+
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                respostaWorldChampionship();
+                break;
+            case ConsoleKey.D2:
+                respostaMostConstructors();
+                break;
+            case ConsoleKey.D3:
+                respostaMostGrandPrixVictories();
+                break;
+            case ConsoleKey.D4:
+                respostaMostpolepositions();
+                break;
+            case ConsoleKey.D5:
+                respostaYoungestdrivertowin();
+                break;
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void preguntesF1()
+{
+    Console.WriteLine("1- Most Drivers’ World Championships?");
+    Console.WriteLine("2- Most Constructors’ World Championships?");
+    Console.WriteLine("3- Most Grand Prix Victories?");
+    Console.WriteLine("4- Most pole positions?");
+    Console.WriteLine("5- Youngest driver to win an f1 world championship?");
+}
+public static void MsgNextScreen(string msg)
+{
+    Console.WriteLine(msg);
+    Console.ReadKey();
+
+}
+public static void respostaWorldChampionship()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare1();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Alo1();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Ham1();
+                break;
+            case ConsoleKey.D3:
+                Fan1();
+                break;
+            case ConsoleKey.D4:
+                Vett1();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare1()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Fernando Alonso");
+    Console.WriteLine("2- Lewis Hamilton");
+    Console.WriteLine("3- Juan Manuel Fangio");
+    Console.WriteLine("4- Sebastian Vettel");
+    Console.WriteLine("0- EXIT");
+}
+public static void Alo1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS HAMILTON !", Alonso());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Alonso()
+{
+    return " ALOSNO ";
+}
+public static void Ham1()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Hamilton());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Hamilton()
+{
+    return "HAMILTON";
+}
+public static void Fan1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS HAMILTON!", Fangio());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Fangio()
+{
+    return "FANGIO";
+}
+public static void Vett1()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS HAMILTON!", Vettel());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Vettel()
+{
+    return "VETTEL";
+}
+public static void respostaMostConstructors()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare2();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Fer2();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Will2();
+                break;
+            case ConsoleKey.D3:
+                Merc2();
+                break;
+            case ConsoleKey.D4:
+                Lot2();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare2()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Ferrari");
+    Console.WriteLine("2- Williams");
+    Console.WriteLine("3- Mercedes");
+    Console.WriteLine("4- Lotus");
+    Console.WriteLine("0- EXIT");
+}
+public static void Fer2()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Ferra());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Ferra()
+{
+    return "FERRARI";
+}
+public static void Will2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS FERRARI !", Williams());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Williams()
+{
+    return "WILLIAMS";
+}
+public static void Merc2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS FERRARI !", Mercedes());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Mercedes()
+{
+    return "MERCEDES";
+}
+public static void Lot2()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS FERRARI !", Lotus());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Lotus()
+{
+    return "LOTUS";
+}
+public static void respostaMostGrandPrixVictories()
+{
+    ConsoleKeyInfo tecla;
+    do
+    {
+        Console.Clear();
+        answare3();
+        tecla = Console.ReadKey();
+        Console.Clear();
+        switch (tecla.Key)
+        {
+            case ConsoleKey.D1:
+                Sen3();
+                Console.ReadLine();
+                break;
+            case ConsoleKey.D2:
+                Seb3();
+                break;
+            case ConsoleKey.D3:
+                Lew3();
+                break;
+            case ConsoleKey.D4:
+                Miche3();
+                break;
+
+        }
+    } while (tecla.Key != ConsoleKey.D0);
+}
+public static void answare3()
+{
+    Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+    Console.WriteLine("1- Ayrton Senna\t");
+    Console.WriteLine("2- Sebastian Vettel");
+    Console.WriteLine("3- Lewis Hamilton");
+    Console.WriteLine("4- Michael Schumacher");
+    Console.WriteLine("0- EXIT");
+}
+public static void Sen3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", Senn());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string Senn()
+{
+    return "SENNA";
+}
+public static void Seb3()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", Seb());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string eb()
+{
+    return "HAMILTON";
 }
