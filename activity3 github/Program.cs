@@ -2443,62 +2443,168 @@ public static string Lotus()
 {
     return "LOTUS";
 }
-public static void respostaMostGrandPrixVictories()
+public static void respostaMostpolepositions()
 {
     ConsoleKeyInfo tecla;
     do
     {
         Console.Clear();
-        answare3();
+        answare4();
         tecla = Console.ReadKey();
         Console.Clear();
         switch (tecla.Key)
         {
             case ConsoleKey.D1:
-                Sen3();
+                Pro4();
                 Console.ReadLine();
                 break;
             case ConsoleKey.D2:
-                Seb3();
+                Mich4();
                 break;
             case ConsoleKey.D3:
-                Lew3();
+                Vet4();
                 break;
             case ConsoleKey.D4:
-                Miche3();
+                Lwi4();
                 break;
 
         }
     } while (tecla.Key != ConsoleKey.D0);
 }
-public static void answare3()
+public static void answare4()
 {
     Console.WriteLine("CHOOSE AN ANSWER PLEASE");
-    Console.WriteLine("1- Ayrton Senna\t");
-    Console.WriteLine("2- Sebastian Vettel");
-    Console.WriteLine("3- Lewis Hamilton");
-    Console.WriteLine("4- Michael Schumacher");
+    Console.WriteLine("1- Alain Prost");
+    Console.WriteLine("2- Michael Schumacher");
+    Console.WriteLine("3- Sebastian Vettel");
+    Console.WriteLine("4- Lewis Hamilton");
     Console.WriteLine("0- EXIT");
 }
-public static void Sen3()
+public static void Pro4()
 {
-    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", Senn());
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", prost());
 
     MsgNextScreen("PRESS A KEY TO TRY AGAIN");
 
 }
-public static string Senn()
+public static string prost()
 {
-    return "SENNA";
+    return "PROST";
 }
-public static void Seb3()
+public static void Mich4()
 {
-    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", Seb());
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", Mich());
 
     MsgNextScreen("PRESS A KEY TO TRY AGAIN");
 
 }
-public static string eb()
+public static string Mich()
+{
+    return "SCHUMACHER";
+}
+public static void Vet4()
+{
+    Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LEWIS HAMILTON !", vet());
+
+    MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+}
+public static string vet()
+{
+    return "VETTEL";
+}
+public static void Lwi4()
+{
+    Console.WriteLine("{0} IS THE CORRECT ANSWER!", Llhm());
+    MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+}
+
+public static string Llhm()
 {
     return "HAMILTON";
+}
+
+public static void respostaYoungestdrivertowin()
+{
+    {
+        ConsoleKeyInfo tecla;
+        do
+        {
+            Console.Clear();
+            answare5();
+            tecla = Console.ReadKey();
+            Console.Clear();
+            switch (tecla.Key)
+            {
+                case ConsoleKey.D1:
+                    Max5();
+                    Console.ReadLine();
+                    break;
+                case ConsoleKey.D2:
+                    Fer5();
+                    break;
+                case ConsoleKey.D3:
+                    Ha5();
+                    break;
+                case ConsoleKey.D4:
+                    Bas5();
+                    break;
+
+            }
+        } while (tecla.Key != ConsoleKey.D0);
+    }
+    public static void answare5()
+    {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+        Console.WriteLine("1- Max Verstappen");
+        Console.WriteLine("2- Fernando Alonso");
+        Console.WriteLine("3- Lewis Hamilton");
+        Console.WriteLine("4- Sebastian Vettel");
+        Console.WriteLine("0- EXIT");
+    }
+    public static void Max5()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS VETTEL !", max());
+
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+    }
+    public static string max()
+    {
+        return "MAX";
+    }
+    public static void Fer5()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS VETTEL !", fer());
+
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+    }
+    public static string fer()
+    {
+        return "ALONSO";
+    }
+    public static void Ha5()
+    {
+        Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS VETTEL!", hasm());
+
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
+
+    }
+    public static string hasm()
+    {
+        return "HAMILTON";
+    }
+    public static void Bas5()
+    {
+        Console.WriteLine("{0} IS THE CORRECT ANSWER!", bastian());
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
+
+    }
+
+    public static string bastian()
+    {
+        return "VETTEL";
+    }
 }
