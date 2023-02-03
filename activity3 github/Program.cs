@@ -32,7 +32,6 @@ internal class Program
                 case ConsoleKey.D6:
                     F1();
                     break;
-
                 default:
                     MsgNextScreen("ERROR, Prem una tecla per tornar al menu..");
                     break;
