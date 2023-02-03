@@ -32,11 +32,9 @@ internal class Program
                 case ConsoleKey.D6:
                     F1();
                     break;
-
                 default:
                     MsgNextScreen("ERROR, Prem una tecla per tornar al menu..");
                     break;
-
             }
         } while (tecla.Key != ConsoleKey.D0);
     }
@@ -49,7 +47,7 @@ internal class Program
         Console.WriteLine("4- FOOTBALL");
         Console.WriteLine("5- NBA");
         Console.WriteLine("6- F1");
-
+        Console.WriteLine("0- EXIT");
     }
     //nayara
     public static void capitals()
