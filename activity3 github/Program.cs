@@ -23,6 +23,15 @@ internal class Program
                 case ConsoleKey.D3:
                   singer();
                     break;
+                case ConsoleKey.D4:
+                  Football();
+                    break;
+                case ConsoleKey.D5:
+                    NBA();
+                    break;
+                case ConsoleKey.D6:
+                    F1();
+                    break;
 
                 default:
                     MsgNextScreen("ERROR, Prem una tecla per tornar al menu..");
@@ -38,6 +47,9 @@ internal class Program
         Console.WriteLine("1- CAPITALS");
         Console.WriteLine("2- BIGGEST COUNTRY");
         Console.WriteLine("3- SINGER");
+        Console.WriteLine("4- FOOTABALL");
+        Console.WriteLine("5- NBA");
+        Console.WriteLine("6- F1");
         Console.WriteLine("0- EXIT");
     }
     //nayara
@@ -62,7 +74,6 @@ internal class Program
                 case ConsoleKey.D3:
                   respostaAndorra();
                     break;
-
                 case ConsoleKey.D4:
                   respostafransa();
                     break;
