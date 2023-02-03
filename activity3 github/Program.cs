@@ -47,7 +47,6 @@ internal class Program
         Console.WriteLine("1- CAPITALS");
         Console.WriteLine("2- BIGGEST COUNTRY");
         Console.WriteLine("3- SINGER");
-<<<<<<< HEAD
         Console.WriteLine("4- FOOTBALL");
         Console.WriteLine("5- NBA");
         Console.WriteLine("6- F1");
