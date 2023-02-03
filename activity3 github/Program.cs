@@ -43,13 +43,18 @@ internal class Program
 
     public static void ShowOptions()
     {
+        Console.WriteLine("CHOOSE A TOPIC");
         Console.WriteLine("1- CAPITALS");
         Console.WriteLine("2- BIGGEST COUNTRY");
         Console.WriteLine("3- SINGER");
+<<<<<<< HEAD
         Console.WriteLine("4- FOOTBALL");
         Console.WriteLine("5- NBA");
         Console.WriteLine("6- F1");
 
+=======
+        Console.WriteLine("0- EXIT");
+>>>>>>> 658ff8e7c97a1043b62ca79636128a6c16da485b
     }
     //nayara
     public static void capitals()
@@ -90,11 +95,13 @@ internal class Program
 
     public static void preguntesTotes()
     {
+        Console.WriteLine("CHOOSE A QUESTION PLEASE");
         Console.WriteLine("1-WHAT'S THE CAPITAL OF THE UK?");
         Console.WriteLine("2-WHAT'S THE CAPITAL OF SPAIN?");
         Console.WriteLine("3-WHAT'S THE CAPITAL OF ANDORRA?");
         Console.WriteLine("4-WHAT'S THE CAPITAL OF FRANCE?");
         Console.WriteLine("5-WHAT'S THE CAPITAL OF GERMANY?");
+        Console.WriteLine("0-EXIT?");
     }
 
     public static void MsgNextScreen(string msg)
@@ -140,60 +147,58 @@ internal class Program
 
     public static void respuestas1()
     {
-       
-        Console.WriteLine("1- london");
-        Console.WriteLine("2- berlin");
-        Console.WriteLine("3- madrid");
-        Console.WriteLine("4- paris");
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+        Console.WriteLine("1- LONDON");
+        Console.WriteLine("2- BERLIN");
+        Console.WriteLine("3- MADRID");
+        Console.WriteLine("4- PARIS");
         Console.WriteLine("0- EXIT");
     }
 
     public static void lon1()
     {
         Console.WriteLine("{0} IS THE CORRECT ANSWER!", lon());
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
 
     }
 
     public static string lon()
     {
-       return"LONDON";
+       return " LONDON ";
     }
     public static void ber1()
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON !", berlin());
-        
       
-
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     
 }
     public static string berlin()
     {
-        return "BERLIN";
+        return " BERLIN ";
     }
     public static void mad1()
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON !", madrid());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
 
     }
     public static string madrid()
     {
-        return "MADRID";
+        return " MADRID ";
     }
 
     public static void par1()
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON !", paris());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
 
     }
     public static string paris()
     {
-        return "PARIS";
+        return " PARIS ";
     }
 
     public static void respostaSpain()
@@ -231,11 +236,11 @@ internal class Program
 
     public static void respuestas2()
     {
-
-        Console.WriteLine("1- soria");
-        Console.WriteLine("2- guadalajara");
-        Console.WriteLine("3- madrid");
-        Console.WriteLine("4- barcelona");
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
+        Console.WriteLine("1- SORIA");
+        Console.WriteLine("2- GUADALAJARA");
+        Console.WriteLine("3- MADRID");
+        Console.WriteLine("4- BARCELONA");
         Console.WriteLine("0- EXIT");
 
     }
@@ -256,7 +261,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS MADRID!", guadalajara());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string guadalajara()
@@ -268,7 +273,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS THE CORRECT ANSWER!", madrid1());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string madrid1()
@@ -280,7 +285,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS MADRID!", barcelona());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string barcelona()
@@ -319,7 +324,7 @@ internal class Program
 
     public static void respuestas3()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- PRAGA");
         Console.WriteLine("2- BRUSSELS");
         Console.WriteLine("3- ATHENS");
@@ -331,7 +336,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ANDORRA LA VELLA!", praga());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string praga()
@@ -354,7 +359,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ANDORRA LA VELLA!", atenes());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string atenes()
@@ -366,7 +371,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS THE CORRECT ANSWER!", andorra());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string andorra()
@@ -404,7 +409,7 @@ internal class Program
     }
     public static void respuestas4()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- ROMA");
         Console.WriteLine("2- PARIS");
         Console.WriteLine("3- VIENNA");
@@ -415,14 +420,14 @@ internal class Program
     {
         Console.WriteLine("{0}IS THE CORRECT ANSWER!", paris());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static void rom1()
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS PARIS!", roma());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string roma()
@@ -434,7 +439,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS PARIS!", viena());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string viena()
@@ -446,7 +451,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS PARIS!", lisboa());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string lisboa()
@@ -485,7 +490,7 @@ internal class Program
 
     public static void respuestas5()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- AMSTERDAM");
         Console.WriteLine("2- MINSK");
         Console.WriteLine("3- BERLIN");
@@ -497,7 +502,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BERLIN!", amsterdam());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string amsterdam()
@@ -509,7 +514,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BERLIN!", minsk());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string minsk()
@@ -521,7 +526,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS THE CORRECT ANSWER!", berlin());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
 
@@ -529,7 +534,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS BERLIN!", bern());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string bern()
@@ -573,6 +578,7 @@ internal class Program
 
     public static void preguntesTotes2()
     {
+        Console.WriteLine("CHOOSE A QUESTION PLEASE");
         Console.WriteLine("1-WHAT'S THE BIGGEST CITY, LONDON OR DUBLIN?"); 
         Console.WriteLine("2-WHAT'S THE BIGGEST CITY, ANKARA OR BUDAPEST?");
         Console.WriteLine("3-WHAT'S THE BIGGEST CITY, SOFIA OR OSLO?");
@@ -616,6 +622,7 @@ internal class Program
 
     public static void respostes11()
     {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1-DUBLIN");
         Console.WriteLine("2-LONDON");
         Console.WriteLine("3-IDK DARLING!");
@@ -627,7 +634,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON!", dublin());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string dublin()
@@ -639,7 +646,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS CORRECT!", london());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string london()
@@ -649,16 +656,16 @@ internal class Program
 
     public static void idk2()
     {
-        Console.WriteLine("DON'T WORRY DARLING! TRY IT LATER!");
+        Console.WriteLine("DON'T WORRY DARLING! TRY IT AGAIN!");
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static void both2()
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS LONDON!", both());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string both()
@@ -701,6 +708,7 @@ internal class Program
 
     public static void respostes22()
     {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1-ANKARA");
         Console.WriteLine("2-BUDAPEST");
         Console.WriteLine("3-IDK DARLING!");
@@ -712,7 +720,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS ANKARA!",budapest());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string budapest()
@@ -724,7 +732,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS CORRECT!", ankara());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string ankara()
@@ -766,6 +774,7 @@ internal class Program
     }
     public static void respostes23()
     {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- OSLO ");
         Console.WriteLine("2-SOFIA");
         Console.WriteLine("3-IDK DARLING!");
@@ -777,7 +786,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS SOFIA!", oslo());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string oslo()
@@ -789,7 +798,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS CORRECT!", sofia());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string sofia()
@@ -834,6 +843,7 @@ internal class Program
     }
     public static void respostes24()
     {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1-STOCKHOLM");
         Console.WriteLine("2-COPENHAGEN ");
         Console.WriteLine("3-IDK DARLING!");
@@ -845,7 +855,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS SOFIA!", copenhagen());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string copenhagen()
@@ -857,7 +867,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS CORRECT!", estocolmo());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string estocolmo()
@@ -901,6 +911,7 @@ internal class Program
 
     public static void respostes25()
     {
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1-WARSAW");
         Console.WriteLine("2-GIRONA ");
         Console.WriteLine("3-IDK DARLING!");
@@ -912,7 +923,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS NOT CORRECT, SORRY THE CORRECT ANSWER IS WARSAW!", girona());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string girona()
@@ -924,7 +935,7 @@ internal class Program
     {
         Console.WriteLine("{0}IS CORRECT!", varsovia());
 
-        MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string varsovia()
@@ -932,7 +943,7 @@ internal class Program
         return " WARSAW";
     }
 
-    //aqui
+    
 
     public static void singer()
     {
@@ -972,6 +983,7 @@ internal class Program
 
     public static void preguntesultimes1()
     {
+        Console.WriteLine("CHOOSE A QUESTION PLEASE");
         Console.WriteLine("1-WHO'S THE SINGER OF MARINERO DE LUCES SONG?");
         Console.WriteLine("2-WHO'S THE SINGER OF EN MI SALSA'S SONG?");
         Console.WriteLine("3-WHO'S THE SINGER OF EL SENYOR DE LA NOCHE'S SONG?");
@@ -1010,7 +1022,7 @@ internal class Program
 
     public static void respuestasultima1()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- ISABEL PANTOJA");
         Console.WriteLine("2- MANOLO ESCOBAR");
         Console.WriteLine("3- ROCIO JURADO");
@@ -1021,7 +1033,7 @@ internal class Program
     public static void isabelP()
     { 
             Console.WriteLine("{0} IS THE CORRECT ANSWER!", isabel());
-       
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string isabel()
@@ -1032,7 +1044,7 @@ internal class Program
     public static void manoloE()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", manolo());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string manolo()
@@ -1043,7 +1055,7 @@ internal class Program
     public static void rocioJ()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", rocio());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string rocio()
@@ -1053,7 +1065,7 @@ internal class Program
     public static void patxotM()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", patxot());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string patxot()
@@ -1091,9 +1103,9 @@ internal class Program
 
     public static void respuestasultima2()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- LETICIA SABATER");
-        Console.WriteLine("2- MARIA PATINYO");
+        Console.WriteLine("2- MARIA PATIÑO");
         Console.WriteLine("3- PATXOT");
         Console.WriteLine("4- MILEY CYRUS");
         Console.WriteLine("0- EXIT");
@@ -1102,7 +1114,7 @@ internal class Program
     public static void letiS()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", leti());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string leti()
@@ -1113,24 +1125,24 @@ internal class Program
     public static void mariaP()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", maria());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string maria()
     {
-        return " MARIA PATINYO ";
+        return " MARIA PATIÑO ";
     }
 
     public static void patxotM2()
     {
         Console.WriteLine("{0} IS THE CORRECT ANSWER!", patxot());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static void mileyC()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", miley());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string miley()
@@ -1169,7 +1181,7 @@ internal class Program
 
     public static void respuestasultima3()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- LETICIA SABATER");
         Console.WriteLine("2- OMAR MONTES");
         Console.WriteLine("3- MONTSERRAT CABALLER");
@@ -1180,7 +1192,7 @@ internal class Program
     public static void omarM()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", omar());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string omar()
@@ -1191,7 +1203,7 @@ internal class Program
     public static void mCaballer()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", caballer());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string caballer()
@@ -1202,7 +1214,7 @@ internal class Program
     public static void dOmar()
     {
         Console.WriteLine("{0} IS THE CORRECT ANSWER!", donO());
-       
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string donO()
@@ -1241,7 +1253,7 @@ internal class Program
 
     public static void respuestasultima4()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- OMAR MONTES");
         Console.WriteLine("2- PATXOT");
         Console.WriteLine("3- ANUEL AA");
@@ -1252,7 +1264,7 @@ internal class Program
     public static void anuelX2A()
     {
         Console.WriteLine("{0} IS THE CORRECT ANSWER!", anuel());
-
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string anuel()
@@ -1263,7 +1275,7 @@ internal class Program
     public static void dOmar2()
     {
         Console.WriteLine("{0} ISN'T THE CORRECT ANSWER SORRY TRY AGAIN!", d0mar2());
-        MsgNextScreen("PRESS A KEY TO GO TO HAVE ANOTHER TRY");
+        MsgNextScreen("PRESS A KEY TO TRY AGAIN");
     }
 
     public static string d0mar2()
@@ -1302,7 +1314,7 @@ internal class Program
 
     public static void respuestasultima5()
     {
-
+        Console.WriteLine("CHOOSE AN ANSWER PLEASE");
         Console.WriteLine("1- ALBERTO GAMBINO");
         Console.WriteLine("2- PATXOT");
         Console.WriteLine("3- LETICIA SABATER");
@@ -1312,7 +1324,7 @@ internal class Program
     public static void albertoG()
     {
         Console.WriteLine("{0} IS THE CORRECT ANSWER!", alberto());
-
+        MsgNextScreen("PRESS A KEY AND THEN 0 TO CHOOSE ANOTHER QUESTION");
     }
 
     public static string alberto()
@@ -2608,3 +2620,4 @@ public static void respostaYoungestdrivertowin()
         return "VETTEL";
     }
 }
+//Mamadou
