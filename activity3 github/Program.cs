@@ -49,10 +49,7 @@ internal class Program
         Console.WriteLine("4- FOOTBALL");
         Console.WriteLine("5- NBA");
         Console.WriteLine("6- F1");
-
-=======
         Console.WriteLine("0- EXIT");
->>>>>>> 658ff8e7c97a1043b62ca79636128a6c16da485b
     }
     //nayara
     public static void capitals()
@@ -76,7 +73,6 @@ internal class Program
                 case ConsoleKey.D3:
                   respostaAndorra();
                     break;
-
                 case ConsoleKey.D4:
                   respostafransa();
                     break;
@@ -2618,4 +2614,3 @@ public static void respostaYoungestdrivertowin()
         return "VETTEL";
     }
 }
-//Mamadou
